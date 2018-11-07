@@ -8,7 +8,7 @@ import javax.validation.constraints.Size;
 public class Items {
     private Integer id;
 
-    @Size(min=1,max=20,message="{items.name.length.error}")
+    @Size(min=1,max=20,message="{items.name.length.error}",groups={ValidGroup1.class})
     private String name;
 
     private Float price;
